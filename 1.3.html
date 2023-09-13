@@ -1,0 +1,70 @@
+<!DOCTYPE html> 
+<html lang="uk">
+
+<head>
+    <title>Lab1.3</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1>Лагодна Валерія Володимирівна,  КН-32, 8 варіант</h1>
+    <a href="C:\Users\Lera\Desktop\HTML\1.1.html">Повернутися на головну сторінку</a>
+    <p>Необхідно розробити форму для введення інформації про тварину.
+        <br>
+        Необхідно заповнити наступні дані:
+    </p>
+    <ul>
+        <li>дані про тварину, включають кличку тварини, тип(вибирається зі списку,
+             наприклад, собака кішка і т.п.), дата народження, колір;
+        </li>
+        <li>дані про власника тварини, включають ПІБ, телефон, електрону адресу,
+             вік (ціле число від 18 до 100).
+        </li>
+    </ul>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Тварина</legend>
+            <label> Кличка тварини
+                <input id="animal_nickname" type="text">
+            </label>
+            <label> Тип
+                <select>
+                    <option>Собака</option>
+                    <option>Кішка</option>
+                    <option>Хом'як</option>
+                    <option>Риба</option>
+                    <option>Інше</option>
+                </select>
+            </label>
+            <label> Дата народження
+                <input id="date_of_birth" type="date">
+            </label>
+            <label> Колір
+                <input id="color" type="color">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>
+                Власник тварини
+            </legend>
+            <label>
+                ПІБ
+                <input id="lastname" type="text">
+            </label>
+            <label> Телефон
+                <input id="phone" type="text">
+            </label>
+            <label> Електронна адреса
+                <input id="owner_email" type="email">
+            </label>
+            <label> Вік
+                <input id="age" type="number" min="18" max="100">
+            </label>
+        </fieldset>
+        <button type="submit">Надіслати</button>
+
+    </form>
+
+</body>
+
+</html>
